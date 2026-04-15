@@ -43,7 +43,7 @@ Begin VB.Form SumScreen
    End
    Begin VB.Label lblValue1 
       Alignment       =   2  'Center
-      Caption         =   "DIGITE O VALOR 1"
+      Caption         =   "DIGITE O VALOR 2"
       Height          =   495
       Left            =   120
       TabIndex        =   2
@@ -77,18 +77,18 @@ Private Sub btnSum_Click()
  
     If Trim(txtValue2.Text) = "" Then
         MsgBox "Digite o segundo valor: ", vbExclamation, "Aviso"
-        txtValue1.SetFocus
+        txtValue2.SetFocus
         Exit Sub
     End If
 
     If Not IsNumeric(txtValue1.Text) Then
-        MsgBox "O 1º valor digitado não é número", vbExclamation, "Aviso"
+        MsgBox "O 1Âº valor digitado nÃ£o Ã© nÃºmero", vbExclamation, "Aviso"
         txtValue1.SetFocus
         Exit Sub
     End If
 
     If Not IsNumeric(txtValue2.Text) Then
-        MsgBox "O 2º valor digitado não é número", vbExclamation, "Aviso"
+        MsgBox "O 2Âº valor digitado nÃ£o Ã© nÃºmero", vbExclamation, "Aviso"
         txtValue2.SetFocus
         Exit Sub
     End If
